@@ -25,12 +25,9 @@
             color = c;
         }
 
-        var chat = ["a","b","c"];
-
         $(document).ready(function() {
 
             var $popup = $('<div>').addClass('popup-box');
-            $popup.appendTo("#imgDiv");
 
             $("#print").html("Width : " + $("#myImg").width()  + " Height : " + $("#myImg").height());
 
@@ -51,14 +48,6 @@
                     'top' : howFarFromtop + 20,
                     'left' : howFarFromLeft + 20
                 });
-
-                $popup.id = "myPopup";
-
-                for(var i = 0 ; i < chat.length ; i++)
-                {
-                    var $chatText = $('<p>').addClass('chat-text');
-                    $chatText.appendTo("#myPopup");
-                }
 
                 $popup.appendTo("#imgDiv");
             });
@@ -142,8 +131,5 @@
         </div>-->
     </div>
 </div>
-
-
-
 </body>
 </html>
