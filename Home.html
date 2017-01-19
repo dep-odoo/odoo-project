@@ -16,6 +16,7 @@
     <link href = "CSS/bootstrap.min.css" rel = "stylesheet">
     <link href = "CSS/circle.css" rel = "stylesheet">
 
+
     <script type="text/javascript">
 
         var color= "#09f";
@@ -29,8 +30,8 @@
         $(document).ready(function() {
 
             var $popup = $('<div>').addClass('popup-box');
-            /*$popup.appendTo("#imgDiv");
-*/
+            $popup.appendTo("#imgDiv");
+
             $("#print").html("Width : " + $("#myImg").width()  + " Height : " + $("#myImg").height());
 
             $("#imgDiv").click("click",function (e) {
@@ -110,7 +111,7 @@
 <body id="mybody">
 
 <div id="imgDiv">
-    <img id="myImg" src="images/screenshot.png">
+    <img id="myImg" src="images/screenshot.png" style="pointer-events: none;-moz-user-select: none;" ondragstart="return false;">
     <p id="print"></p>
 </div>
 
